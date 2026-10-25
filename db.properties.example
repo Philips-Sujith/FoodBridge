@@ -1,0 +1,30 @@
+# ==========================================================
+# FoodBridge Database Configuration (Template)
+# ==========================================================
+
+# Database engine mode: 'embedded' (zero-setup local H2) or 'mysql' (remote/cloud)
+# Default is 'embedded' so the application runs immediately without any cloud setup.
+db.mode=embedded
+
+# ----------------------------------------------------------
+# Remote / Cloud MySQL Configuration (Optional)
+# ----------------------------------------------------------
+# To collaborate across laptops, set db.mode=mysql and supply your credentials:
+mysql.driver=com.mysql.cj.jdbc.Driver
+mysql.url=jdbc:mysql://YOUR_CLOUD_HOST:3306/foodbridge?useSSL=true&serverTimezone=UTC
+mysql.user=YOUR_CLOUD_USERNAME
+mysql.password=YOUR_CLOUD_PASSWORD
+
+# ----------------------------------------------------------
+# Embedded Relational Configuration (Zero-setup evaluation)
+# ----------------------------------------------------------
+embedded.driver=org.h2.Driver
+embedded.url=jdbc:h2:./data/foodbridge;MODE=MySQL;DATABASE_TO_LOWER=TRUE;AUTO_SERVER=TRUE
+embedded.user=sa
+embedded.password=
+
+# ----------------------------------------------------------
+# Fallback Behavior
+# ----------------------------------------------------------
+# Automatically fall back to local embedded H2 if cloud MySQL is unreachable
+fallback.to.embedded=true

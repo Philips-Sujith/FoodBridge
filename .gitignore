@@ -1,0 +1,54 @@
+# ==========================================================
+# FoodBridge Git Ignore
+# ==========================================================
+
+# Build & Compiled artifacts
+bin/
+*.class
+sources_list.txt
+
+# Documentation & Reports (Excluded per minimal clean repository requirements)
+docs/
+*.docx
+*.pdf
+
+# Demo & Test Files (Excluded per minimal clean repository requirements)
+reset_demo.bat
+reset_demo.ps1
+src/com/foodbridge/config/DemoReset.java
+src/com/foodbridge/gui/ShellDemoPanel.java
+src/com/foodbridge/test/
+
+# Safety Archive
+TRASH/
+
+# Sensitive Configuration (credentials)
+db.properties
+FoodBridge_Distribution/FoodBridge/db.properties
+
+# Compressed Archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Local Database Files
+data/
+*.mv.db
+*.db
+*.trace.db
+
+# IDE Folders & Workspaces
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Logs & Temporary Files
+*.log
+logs/
+temp/
+tmp/
+
