@@ -1,6 +1,6 @@
 # FoodBridge — Excess Food Wastage Prevention Platform
 
-**FoodBridge** is a dual-interface (Pure Java AWT GUI & Terminal Console) desktop application engineered to eliminate commercial food wastage by bridging surplus food publishers (Restaurants, Hotels, Banquets, Caterers) with food claimers (NGOs, Orphanages, Relief Shelters).
+**FoodBridge** is a dual-interface (Pure Java AWT GUI & Terminal Console) desktop application engineered to eliminate commercial food wastage by bridging surplus food publishers (Restaurants, Hotels, Banquets, Caterers) with food claimers (NGO's, Orphanages, Relief Shelters).
 
 The technical core of the system combines **geospatial Haversine proximity matching** (which sorts listings nearest-first and flags those within a 10 km radius with an **`[IN RANGE]`** indicator) with **atomic race-condition-safe claims** executed under ACID isolation.
 
